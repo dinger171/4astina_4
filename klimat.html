@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="weather/style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="bgk">
+  <img src="images/task/header.jpg" class="hearderimg">
+  <button onclick="menuClick()" id="menubt">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+      style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+      <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
+    </svg>
+  </button>
+  <div id="menu" style="left: -50%;">
+    <button onclick="menuClick()" id="menubt"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
+        width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+        <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
+      </svg>
+    </button><br>
+    <a href="nazva.html">Назва міста</a><br>
+    <a href="klimat.html">Кількість опадів</a><br>
+    <a href="naselennia.html">Населення</a><br>
+    <a href="transport.html">Транспорт</a><br>
+    <a href="simvolika.html">Символіка</a><br>
+    <a href="zalik.html">Залік</a><br>
+    <a href="anketa.html">Анкета</a>
+  </div>
+
+  <div class="fontext"> 
+    <span class="green" id="center">Клімат</span><br><br>
+    
+    <center>
+      <table align="center" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <th colspan="14">Климат Харькова (1981-2010)</th>
+        </tr>
+        <tr>
+          <th width="40">Показник</th>
+          <th width="40">Січ</th>
+          <th width="40">Лют</th>
+          <th width="40">Бер</th>
+          <th width="40">Кві</th>
+          <th width="40">Тра</th>
+          <th width="40">Чер</th>
+          <th width="40">Лип</th>
+          <th width="40">Сер</th>
+          <th width="40">Вер</th>
+          <th width="40">Жов</th>
+          <th width="40">Лис</th>
+          <th width="40">Гру</th>
+          <th width="40">Рик</th>
+          </tr>
+        <tr>
+          <th>Абсолютний максимум, С</th>
+          <td bgcolor="#ffff80"><b>11,0</b></td>
+          <td bgcolor="#fff060"><b>14,6</b></td>
+          <td bgcolor="#ffd020"><b>21,8</b></td>
+          <td bgcolor="#ffa000"><b>30,4</b></td>
+          <td bgcolor="#ff9000"><b>34,5</b></td>
+          <td bgcolor="#ff8000"><b>46,8</b></td>
+          <td bgcolor="#ff7820"><b>37,6</b></td>
+          <td bgcolor="#ff7820"><b>39,8</b></td>
+          <td bgcolor="#ffa000"><b>33,7</b></td>
+          <td bgcolor="#ffb000"><b>29,3</b></td>
+          <td bgcolor="#ffc000"><b>18,5</b></td>
+          <td bgcolor="#ffff80"><b>13,4</b></td>
+          <td bgcolor="#ff7820"><b>39,8</b></td>
+        </tr>
+        <tr>
+          <th>Середий максимум, С</th>
+          <td bgcolor="#80ffa0"><b>-2,8</b></td>
+          <td bgcolor="#80ffa0"><b>-2</b></td>
+          <td bgcolor="#a0ff80"><b>3,7</b></td>
+          <td bgcolor="#ffff80"><b>14</b></td>
+          <td bgcolor="#ffd020"><b>20,7</b></td>
+          <td bgcolor="#ffc000"><b>24,6</b></td>
+          <td bgcolor="#ffc000"><b>25,9</b></td>
+          <td bgcolor="#ffc000"><b>25,2</b></td>
+          <td bgcolor="#ffe040"><b>19,4</b></td>
+          <td bgcolor="#ffff80"><b>11,7</b></td>
+          <td bgcolor="#a0ff80"><b>3,6</b></td>
+          <td bgcolor="#80ffa0"><b>-0,8</b></td>
+          <td bgcolor="#ffff80"><b>11,9</b></td>
+        </tr>
+        <tr>
+          <th>Середня температура, С</th>
+          <td bgcolor="#80ffc0"><b>-5,7</b></td>
+          <td bgcolor="#80ffc0"><b>-5,1</b></td>
+          <td bgcolor="#e0ff80"><b>0,1</b></td>
+          <td bgcolor="#e0ff80"><b>9,1</b></td>
+          <td bgcolor="#fff060"><b>15,3</b></td>
+          <td bgcolor="#ffe040"><b>19,2</b></td>
+          <td bgcolor="#ffd020"><b>20,4</b></td>
+          <td bgcolor="#ffe040"><b>19,5</b></td>
+          <td bgcolor="#ffff80"><b>13,9</b></td>
+          <td bgcolor="#c0ff80"><b>7,3</b></td>
+          <td bgcolor="#80ff80"><b>0,8</b></td>
+          <td bgcolor="#80ffa0"><b>-3,3</b></td>
+          <td bgcolor="#c0ff80"><b>7,6</b></td>
+        </tr>
+        <tr>
+          <th>Середий минимум, С</th>
+          <td bgcolor="#80ffe0"><b>-2,8</b></td>
+          <td bgcolor="#80ffe0"><b>-2</b></td>
+          <td bgcolor="#80ffa0"><b>3,7</b></td>
+          <td bgcolor="#a0ff80"><b>14</b></td>
+          <td bgcolor="#e0ff80"><b>20,7</b></td>
+          <td bgcolor="#ffff80"><b>24,6</b></td>
+          <td bgcolor="#fff060"><b>25,9</b></td>
+          <td bgcolor="#ffff80"><b>25,2</b></td>
+          <td bgcolor="#e0ff80"><b>19,4</b></td>
+          <td bgcolor="#a0ff80"><b>11,7</b></td>
+          <td bgcolor="#80ffa0"><b>3,6</b></td>
+          <td bgcolor="#80ffc0"><b>-0,8</b></td>
+          <td bgcolor="#a0ff80"><b>11,9</b></td>
+        </tr>
+      </table>
+    </center>
+
+  <br><br>
+
+    Місто знаходиться майже на кордоні зон лісостепу та степу, випаровуваність влітку помітно перевищує опади. Головні
+    фактори, що<br> впливають на клімат міста.<br><br>
+    
+    Географічне положення. Поблизу <spann class="podkresleno">Харкова</spann> немає значних водойм, які впливають на клімат. Однак до міста можуть доходити<br>
+    повітряні маси з Чорного, Середземного морів та Атлантичного океану. Місто відкрите для вітрів всіх напрямків, чим
+    обумовлені значні<br> річні коливання температури
+    
+    <span class="podkresleno">Харків</span> розташований на п'яти пагорбах і має перепад висот між верхньою і нижньою точками понад 115 метрів. Тому холодне
+    повітря<br> рухається з верхніх точок вниз, зазвичай у долини річок, де знижує температуру.<br>
+    <ul>
+      <li>Середньорічна температура — 8,1 C.</li>
+      <li>Середньорічна кількість опадів 515 мм.</li>
+      <li>Середньорічна швидкість вітру 4 м/с.</li>
+      <li>Середньорічна вологість повітря 74%.</li>
+    </ul>
+    
+    Найсухіші місяці — з лютого по квітень, причиною чого є мала активність Атлантики. Найменше опадів випадає в березні — у
+    середньому<br> 27 мм.<br><br>
+    
+    З року в рік кількість опадів дуже не рівномірна — за весь час метеоспостережень в місті їхня кількість коливалась<br>
+    від 319 мм (<span class="red">1957 рік</span>) до 754 мм (<span class="red">1970 рік</span>). Зафіксовано, що найбільше опадів випало в <span class="red">1879 р</span>. (898 мм), а найменше (279
+    мм) — в <span class="red">1921 р.</span><br>
+
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="enter city name" spellcheck="false" disabled class="disabled">
+        <button class="disabled" disabled><img src="images/search.png"></button>
+      </div>
+      <div class="error">
+        <p>Invalid city name</p>
+      </div>
+      <div class="weather">
+        <img src="images/rain.png" class="weather-icon">
+        <h1 class="temp">22 C</h1>
+        <h2 class="city">new york</h2>
+        <div class="details">
+          <div class="col">
+            <img src="images/humidity.png">
+            <div>
+              <p class="humidity">
+                50%
+              </p>
+              <p>humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/wind.png">
+            <div>
+              <p class="wind">
+                15 km/h
+              </p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const apiKey = "bbea3ca959ae19d96471398e75fd0e01";
+      const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
+
+      const searchBox = document.querySelector(".search input");
+      const searchBtn = document.querySelector(".search button");
+      const weatherIcon = document.querySelector(".weather-icon");
+
+      async function checkWeather(city) {
+        const response = await fetch(apiUrl + "Харків" + `&appid=${apiKey}`);
+
+        if (response.status == 404) {
+          document.querySelector(".error").style.display = "block";
+          document.querySelector(".weather").style.display = "none";
+        }
+        var data = await response.json();
+
+        console.log(data);
+        document.querySelector(".city").innerHTML = data.name;
+        document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
+        document.querySelector(".humidity").innerHTML = data.main.humidity + " %";
+        document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
+        if (data.weather[0].main == "Clouds") {
+          weatherIcon.src = "images/clouds.png";
+        }
+        else if (data.weather[0].main == "Clear") {
+          weatherIcon.src = "images/clear.png";
+        }
+        else if (data.weather[0].main == "Rain") {
+          weatherIcon.src = "images/rain.png";
+        }
+        else if (data.weather[0].main == "Drizzle") {
+          weatherIcon.src = "images/drizzle.png";
+        }
+        else if (data.weather[0].main == "Mist") {
+          weatherIcon.src = "images/Mist.png";
+        }
+        document.querySelector(".weather").style.display = "block";
+        document.querySelector(".error").style.display = "none";
+      }
+      searchBtn.addEventListener("click", () => {
+        checkWeather(searchBox.value);
+      })
+      checkWeather()
+
+
+    </script>
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <a href="zalik.html">
+      <lord-icon src="https://cdn.lordicon.com/epietrpn.json" trigger="hover" style="width:250px;height:250px">
+      </lord-icon>
+    </a>
+  </div> 
+  <script src="index.js"></script>
+</body>
+</html>

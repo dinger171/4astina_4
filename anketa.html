@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="bga"> <!--white is better then gray-->
+  <img src="images/task/header.jpg" class="hearderimg">
+  <button onclick="menuClick()" id="menubt">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+      style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+      <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
+    </svg>
+  </button>
+  <div id="menu" style="left: -50%;">
+    <button onclick="menuClick()" id="menubt"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
+        width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+        <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
+      </svg>
+    </button><br>
+    <a href="nazva.html">Назва міста</a><br>
+    <a href="klimat.html">Кількість опадів</a><br>
+    <a href="naselennia.html">Населення</a><br>
+    <a href="transport.html">Транспорт</a><br>
+    <a href="simvolika.html">Символіка</a><br>
+    <a href="zalik.html">Залік</a><br>
+    <a href="anketa.html">Анкета</a>
+  </div>
+  <div class="fonanketa2">
+    <h1>Анкета</h1>
+    <fieldset>
+      <legend>Місто та я</legend>
+      <form>
+        <ol>
+          <li>Чи давно ви живете в цьоиу місті?</li>
+          <select id="one">
+            <option>5 років</option>
+            <option>7 років</option>
+            <option>10 років</option>
+            <option>11 - 16 років</option>
+          </select>
+          <li>Введіть Стать</li>
+          <label for="stati">
+            <input type="radio" id="stati" name="stati">Чел. </input>
+            <input type="radio" id="stati" name="stati">Жін.</input>
+        </label>
+        <li>Як ви добираєтеся до школи?</li>
+        <select name="wkola" id="wkola">
+          <option>Пішки</option>
+          <option>Автобус</option>
+          <option>Тролейбус</option>
+          <option>Маршрутка</option>
+          <option>Машина</option>
+        </select>
+        <li>Який фільм в останній раз ви дивилися та у якому кінотеатрі?<br>(Введіть відповідь)</li>
+        <input type="text">
+        <li>Де у місті ви проводите свій вільний час?</li>
+        <select name="vp" id="vp" multiple size="5">
+          <option>За комп'ютером</option>
+          <option>У дворі</option>
+          <option>На природі</option>
+          <option>Читаю книжки будь-де</option>
+          <option>У ТЦ</option>
+        </select>
+        <li>Моє хоббі</li>
+        <form>
+          <input type="checkbox" name="hobby" id="hobbyweb">
+          <label for="hobbyweb">Створення сайтів</label><br>
+          <input type="checkbox" name="hobby" id="play_computer_games">
+          <label for="play_computer_games">Гра в онлайн-игри</label><br>
+          <input type="checkbox" name="hobby" id="sport">
+          <label for="sport">Спорт</label><br>
+          <input type="checkbox" name="hobby" id="podoroji">
+          <label for="podoroji">Подорожі</label><br>
+        </form>
+        </ol>
+      </form>
+      <button onclick="alert('Дякуємо за заповнення анкети!')">Завантажити</button><br><br>
+      <a href="zalik.html">Назад</a>
+    </fieldset>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
